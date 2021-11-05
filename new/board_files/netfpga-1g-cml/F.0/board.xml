@@ -578,23 +578,4 @@
     <connection_map name="part0_pcie_express_1" c1_st_index="66" c1_end_index="81" c2_st_index="0" c2_end_index="15"/>
   </connection>
 </connections>
-<ip_associated_rules>
-  <ip_associated_rule name="default">
-    <ip vendor="xilinx.com" library="ip" name="axi_pcie3" version="*" ip_interface="sys_rst_n">
-      <associated_board_interfaces>
-        <associated_board_interface name="pcie_perstn" order="0"/> 
-      </associated_board_interfaces>
-    </ip>
-    <ip vendor="xilinx.com" library="ip" name="xdma" version="*" ip_interface="sys_rst_n">
-      <associated_board_interfaces>
-        <associated_board_interface name="pcie_perstn" order="0"/> 
-      </associated_board_interfaces>
-    </ip>
-    <ip vendor="xilinx.com" library="ip" name="util_ds_buf" version="*" ip_interface="CLK_IN_D">
-      <associated_board_interfaces>
-        <associated_board_interface name="pcie_refclk" order="0"/> 
-      </associated_board_interfaces>
-    </ip>
-  </ip_associated_rule>
-</ip_associated_rules>
 </board>
