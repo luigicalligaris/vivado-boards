@@ -74,26 +74,26 @@
     <pin index="61" name="rgmii_tx_ctl_4" iostandard="LVCMOS18" loc="J11"/>
     <pin index="62" name="rgmii_txc_4" iostandard="LVCMOS18" loc="D14"/>
     <!-- PCIe refclock -->
-    <pin index="63" name ="pcie_mgt_clkp" loc="H6"/>
-    <pin index="64" name ="pcie_mgt_clkn" loc="H5"/>
+    <pin index="63" name ="pcie_mgtrefclk0p_115" loc="H6"/>
+    <pin index="64" name ="pcie_mgtrefclk0n_115" loc="H5"/>
     <!-- PCIe reset -->
     <pin index="65" name ="pcie_perstn_rst" iostandard="LVCMOS18" loc="AA7"/>
     <!-- PCIe lanes -->
-    <pin index="66" name ="pcie_rx0_p" loc="H2"/>
-    <pin index="67" name ="pcie_tx0_p" loc="J4"/>
-    <pin index="68" name ="pcie_rx0_n" loc="H1"/>
-    <pin index="69" name ="pcie_tx0_n" loc="J3"/>
-    <pin index="70" name ="pcie_rx1_p" loc="K2"/>
-    <pin index="71" name ="pcie_tx1_p" loc="L4"/>
-    <pin index="72" name ="pcie_rx1_n" loc="K1"/>
-    <pin index="73" name ="pcie_tx1_n" loc="L3"/>
-    <pin index="74" name ="pcie_rx2_p" loc="M2"/>
-    <pin index="75" name ="pcie_tx2_p" loc="N4"/>
-    <pin index="76" name ="pcie_rx2_n" loc="M1"/>
-    <pin index="77" name ="pcie_tx2_n" loc="N3"/>
-    <pin index="78" name ="pcie_rx3_p" loc="P2"/>
-    <pin index="79" name ="pcie_tx3_p" loc="R4"/>
-    <pin index="80" name ="pcie_rx3_n" loc="P1"/>
-    <pin index="81" name ="pcie_tx3_n" loc="R3"/>
+    <pin index="66" name ="pcie_mgtxtxp3_115" loc="H2"/>
+    <pin index="67" name ="pcie_mgtxtxn3_115" loc="H1"/>
+    <pin index="68" name ="pcie_mgtxrxp3_115" loc="J4"/>
+    <pin index="69" name ="pcie_mgtxrxn3_115" loc="J3"/>
+    <pin index="70" name ="pcie_mgtxtxp2_115" loc="K2"/>
+    <pin index="71" name ="pcie_mgtxtxn2_115" loc="K1"/>
+    <pin index="72" name ="pcie_mgtxrxp2_115" loc="L4"/>
+    <pin index="73" name ="pcie_mgtxrxn2_115" loc="L3"/>
+    <pin index="74" name ="pcie_mgtxtxp1_115" loc="M2"/>
+    <pin index="75" name ="pcie_mgtxtxn1_115" loc="M1"/>
+    <pin index="76" name ="pcie_mgtxrxp1_115" loc="N4"/>
+    <pin index="77" name ="pcie_mgtxrxn1_115" loc="N3"/>
+    <pin index="78" name ="pcie_mgtxtxp0_115" loc="P2"/>
+    <pin index="79" name ="pcie_mgtxtxn0_115" loc="P1"/>
+    <pin index="80" name ="pcie_mgtxrxp0_115" loc="R4"/>
+    <pin index="81" name ="pcie_mgtxrxn0_115" loc="R3"/>
     </pins>
 </part_info>
