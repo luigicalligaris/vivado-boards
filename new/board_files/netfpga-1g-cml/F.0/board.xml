@@ -299,12 +299,12 @@
         <port_maps>
           <port_map logical_port="CLK_P" physical_port="pcie_mgt_clkp" dir="in">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_mgt_clkp"/>
+              <pin_map port_index="0" component_pin="pcie_mgtrefclk0p_115"/>
             </pin_maps>
           </port_map>
           <port_map logical_port="CLK_N" physical_port="pcie_mgt_clkn" dir="in">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_mgt_clkn"/>
+              <pin_map port_index="0" component_pin="pcie_mgtrefclk0n_115"/>
             </pin_maps>
           </port_map>
         </port_maps>
@@ -332,24 +332,24 @@
           <preferred_ip vendor="xilinx.com" library="ip" name="xdma" order="1"/>
         </preferred_ips>
         <port_maps>
-          <port_map logical_port="txn" physical_port="pcie_tx0_n" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_tx0_n"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="rxn" physical_port="pcie_rx0_n" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_rx0_n"/> 
-            </pin_maps>
-          </port_map>
           <port_map logical_port="txp" physical_port="pcie_tx0_p" dir="out">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_tx0_p"/> 
+              <pin_map port_index="0" component_pin="pcie_mgtxtxp3_115"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="txn" physical_port="pcie_tx0_n" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="pcie_mgtxtxn3_115"/> 
             </pin_maps>
           </port_map>
           <port_map logical_port="rxp" physical_port="pcie_rx0_p" dir="in">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_rx0_p"/> 
+              <pin_map port_index="0" component_pin="pcie_mgtxrxp3_115"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="rxn" physical_port="pcie_rx0_n" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="pcie_mgtxrxn3_115"/> 
             </pin_maps>
           </port_map>
         </port_maps>
@@ -363,28 +363,28 @@
           <preferred_ip vendor="xilinx.com" library="ip" name="xdma" order="1"/>
         </preferred_ips>
         <port_maps>
-          <port_map logical_port="txn" physical_port="pcie_tx0_nx2" dir="out" left="1" right="0">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_tx0_n"/>
-              <pin_map port_index="1" component_pin="pcie_tx1_n"/>
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="rxn" physical_port="pcie_rx0_nx2" dir="in" left="1" right="0">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_rx0_n"/> 
-              <pin_map port_index="1" component_pin="pcie_rx1_n"/>
-            </pin_maps>
-          </port_map>
           <port_map logical_port="txp" physical_port="pcie_tx0_px2" dir="out" left="1" right="0">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_tx0_p"/>
-              <pin_map port_index="1" component_pin="pcie_tx1_p"/>
+              <pin_map port_index="0" component_pin="pcie_mgtxtxp3_115"/> 
+              <pin_map port_index="1" component_pin="pcie_mgtxtxp2_115"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="txn" physical_port="pcie_tx0_nx2" dir="out" left="1" right="0">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="pcie_mgtxtxn3_115"/> 
+              <pin_map port_index="1" component_pin="pcie_mgtxtxn2_115"/>
             </pin_maps>
           </port_map>
           <port_map logical_port="rxp" physical_port="pcie_rx0_px2" dir="in" left="1" right="0">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_rx0_p"/> 
-              <pin_map port_index="1" component_pin="pcie_rx1_p"/>
+              <pin_map port_index="0" component_pin="pcie_mgtxrxp3_115"/> 
+              <pin_map port_index="1" component_pin="pcie_mgtxrxp2_115"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="rxn" physical_port="pcie_rx0_nx2" dir="in" left="1" right="0">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="pcie_mgtxrxn3_115"/> 
+              <pin_map port_index="1" component_pin="pcie_mgtxrxn2_115"/>
             </pin_maps>
           </port_map>
         </port_maps>
@@ -400,34 +400,34 @@
         <port_maps>
           <port_map logical_port="txn" physical_port="pcie_tx_nx4" dir="out" left="3" right="0">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_tx0_n"/>
-              <pin_map port_index="1" component_pin="pcie_tx1_n"/>
-              <pin_map port_index="2" component_pin="pcie_tx2_n"/>
-              <pin_map port_index="3" component_pin="pcie_tx3_n"/>
+              <pin_map port_index="0" component_pin="pcie_mgtxtxp3_115"/> 
+              <pin_map port_index="1" component_pin="pcie_mgtxtxp2_115"/>
+              <pin_map port_index="2" component_pin="pcie_mgtxtxp1_115"/> 
+              <pin_map port_index="3" component_pin="pcie_mgtxtxp0_115"/>
             </pin_maps>
           </port_map>
           <port_map logical_port="rxn" physical_port="pcie_rx_nx4" dir="in" left="3" right="0">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_rx0_n"/> 
-              <pin_map port_index="1" component_pin="pcie_rx1_n"/>
-              <pin_map port_index="2" component_pin="pcie_rx2_n"/>
-              <pin_map port_index="3" component_pin="pcie_rx3_n"/>
+              <pin_map port_index="0" component_pin="pcie_mgtxtxn3_115"/> 
+              <pin_map port_index="1" component_pin="pcie_mgtxtxn2_115"/>
+              <pin_map port_index="2" component_pin="pcie_mgtxtxn1_115"/> 
+              <pin_map port_index="3" component_pin="pcie_mgtxtxn0_115"/>
             </pin_maps>
           </port_map>
           <port_map logical_port="txp" physical_port="pcie_tx_px4" dir="out" left="3" right="0">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_tx0_p"/>
-              <pin_map port_index="1" component_pin="pcie_tx1_p"/>
-              <pin_map port_index="2" component_pin="pcie_tx2_p"/>
-              <pin_map port_index="3" component_pin="pcie_tx3_p"/>
+              <pin_map port_index="0" component_pin="pcie_mgtxrxp3_115"/> 
+              <pin_map port_index="1" component_pin="pcie_mgtxrxp2_115"/>
+              <pin_map port_index="2" component_pin="pcie_mgtxrxp1_115"/> 
+              <pin_map port_index="3" component_pin="pcie_mgtxrxp0_115"/>
             </pin_maps>
           </port_map>
           <port_map logical_port="rxp" physical_port="pcie_rx_px4" dir="in" left="3" right="0">
             <pin_maps>
-              <pin_map port_index="0" component_pin="pcie_rx0_p"/> 
-              <pin_map port_index="1" component_pin="pcie_rx1_p"/>
-              <pin_map port_index="2" component_pin="pcie_rx2_p"/>
-              <pin_map port_index="3" component_pin="pcie_rx3_p"/>
+              <pin_map port_index="0" component_pin="pcie_mgtxrxn3_115"/> 
+              <pin_map port_index="1" component_pin="pcie_mgtxrxn2_115"/>
+              <pin_map port_index="2" component_pin="pcie_mgtxrxn1_115"/> 
+              <pin_map port_index="3" component_pin="pcie_mgtxrxn0_115"/>
             </pin_maps>
           </port_map>
         </port_maps>
